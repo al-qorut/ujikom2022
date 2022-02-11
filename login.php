@@ -1,6 +1,9 @@
 <?php
 	require_once('config.php');
-	$aksi=$_POST['aksi'];
+	$aksi = '';
+	if(!empty($_POST['aksi'])){
+		$aksi=$_POST['aksi'];
+	}
 	switch($aksi){
 		case 'Masuk!':
 			$nik = $_POST['nik'];
